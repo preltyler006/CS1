@@ -8,7 +8,7 @@ int main() {
     // FOR LOOP METHOD
 
     for (int i = 48; i <= 57; i++) { // Printing number values
-        cout << "    " << (unsigned char)i << "             " << i << endl;
+        cout << "    " << static_cast<char>(i) << "             " << i << endl;
     }
 
     for (int i = 65; i <= 90; i++) { // Printing capital letters
