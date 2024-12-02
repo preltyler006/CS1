@@ -1,23 +1,23 @@
 #include <iostream>
-#include <cctype>
 #include <string>
 
 using namespace std;
 
 int main() {
-    string fort = "fort";
-    string nite = "nite";
 
+    enum data {
+        MON, TUES, WED
+    };
 
-    char ca = 'e';
-    char upper = toupper(ca);
-    cout << upper << endl;
+    int datas[3];
 
-    char fortnite[10] = "fortnite";
-    string phrase = fort + nite;
-    cout << phrase << endl;
-    cout << fort << endl;
-    cout << fortnite;
+    data blah;
+
+    for (blah = MON; blah <= WED; blah = static_cast<data>(blah + 1)) {
+        cout << "Enter the sales for day " << blah << ": ";
+        cin >> datas[blah];
+
+    }
 
     return 0;
 }
