@@ -1,13 +1,17 @@
 #include <iostream>
 #include <string>
+#include <fstream>
 using namespace std;
 
 int main() {
-    char string1[30] = "In the Garden"; 
-    char string2[15] = "of Eden"; 
-    strcat(string1,string2);
-    cout << string1;
+    fstream file("./games.txt", ios::app);
 
+    string line = "naw ";
+
+    file << line;
+
+
+    file.close();
 
     return 0;
 }
