@@ -46,6 +46,7 @@ int main() {
 
     ASCIIfile.close();
 
+
     ASCIIfile.open(FILENAME, ios::binary | ios::in);
     readFile(ASCIIfile);
 
