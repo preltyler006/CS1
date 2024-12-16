@@ -8,7 +8,7 @@ struct ASCII {
 };
 
 const string FILENAME = "./ASCIIfile.dat";
-const int MAX_LENGTH = 70;
+const int MAX_LENGTH = 62;
 
 
 void writeToFile(fstream& ASCIIfile, ASCII listOfAscii[], int start, int end) {

@@ -4,12 +4,25 @@
 using namespace std;
 
 int main() {
-    fstream file("./games.txt", ios::app);
+    fstream file;
 
-    string line = "naw ";
+    file.open("./games.txt", ios::in);
 
-    file << line;
+    string line;
+    string num;
 
+    while(getline(file, line)) {
+        num = line;
+    }
+
+    file.close();
+
+    file.open("./games.txt", ios::out);
+
+    for (int i = 0; i <= stoi(num) + 2; i++) {
+        cout << i << endl;
+        file << i << endl;
+    }
 
     file.close();
 
