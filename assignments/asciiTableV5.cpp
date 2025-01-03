@@ -14,6 +14,7 @@ const int MAX_LENGTH = 62;
 void writeToFile(fstream& ASCIIfile, ASCII listOfAscii[], int start, int end) {
     for (int i = start; i <= end; i++) {
         listOfAscii[i].asciiValue = i;
+        cout << i << endl;
         listOfAscii[i].asciiCharacter = static_cast<char>(i);
 
         ASCIIfile.write(reinterpret_cast<char *>(&listOfAscii[i]), sizeof(listOfAscii[i]));
